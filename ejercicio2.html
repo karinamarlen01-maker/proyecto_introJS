@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+
+    <script>
+        function cambiarColor() {
+            const parrafos = document.getElementsByClassName("nota");
+            for (let i = 0; i < parrafos.length; i++) {
+                parrafos[i].style.color = "red";
+            }
+        }
+    </script>
+</head>
+<body style="text-align:center;">
+    <p class="nota">Primer párrafo</p>
+    <p class="nota">Segundo párrafo</p>
+    <p class="nota">Tercer párrafo</p>
+    <input type="button" value="Cambiar color" onclick="cambiarColor()">
+</body>
+</html>

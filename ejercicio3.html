@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+
+    <script>
+        function mostrarOcultar() {
+            const imagen = document.querySelector("img");
+            if (imagen.style.display === "none") {
+                imagen.style.display = "block";
+            } else {
+                imagen.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body style="text-align:center;">
+    <img src="images/otoño.jpg" alt="Ejemplo" width="300">
+    <br><br>
+    <input type="button" value="Mostrar / Ocultar imagen" onclick="mostrarOcultar()">
+</body>
+</html>
